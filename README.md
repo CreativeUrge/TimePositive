@@ -1,2 +1,2 @@
 # TimePositive
-TimePositive is a web app built by Adam Agee.
+TimePositive is a time management app for freelancers.
