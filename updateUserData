@@ -1,0 +1,22 @@
+<?php
+// define variables and set to empty values
+$user = $data = "";
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+  $user = test_input($_POST["user"]);
+  $data = test_input($_POST["data"]);
+}
+
+function test_input($x) {
+  $x = trim($x);
+  $x = stripslashes($x);
+  // $x = htmlspecialchars($x);
+  //I commented out that line since it was adding all these special characters and messing up my JSON file... but does it present a security threat to leave it out?
+  return $x;
+}
+
+$myfile = fopen("treasure/$user.js", "w") or die("Unable to open file!");
+$txt = "$data";
+fwrite($myfile, $txt);
+fclose($myfile);
+?>
