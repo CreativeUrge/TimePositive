@@ -1,0 +1,111 @@
+<?php
+//Thank you to this post for help with reading JSON with php: http://stackoverflow.com/questions/19758954/get-data-from-json-file-with-php
+
+//////////////////////////////////////////////////
+////////////TAKE CARE OF OUR VARIABLES////////////
+//////////////////////////////////////////////////
+
+// define variable and set to empty value
+$oldEmail = "";
+$newEmail = "";
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+  $oldEmail = test_input($_POST["oldEmail"]);
+  $newEmail = test_input($_POST["newEmail"]);
+}
+
+function test_input($x) {
+  $x = trim($x);
+  $x = stripslashes($x);
+  // $x = htmlspecialchars($x);
+  //I commented out that line since it was adding all these special characters and messing up my JSON file... but does it present a security threat to leave it out?
+  return $x;
+}
+
+//////////////////////////////////////////////////
+//////////////REFERENCE THE USER LIST/////////////
+//////////////////////////////////////////////////
+
+//(Replace this file path with the real path when I upload it to the server)
+$str = file_get_contents('http://localhost/TimePositive/scripts/treasure/users.js');
+$json = json_decode($str, true); // decode the JSON into an associative array
+
+
+//////////////////////////////////////////////////
+/////////////HANDLE UPDATE OPERATIONS/////////////
+//////////////////////////////////////////////////
+
+//IF BOTH oldEmail and newEmail hold values, it means we want to change the old one to the new one
+if(($oldEmail != "") && ($newEmail != "")){
+	
+	foreach ($json['users'] as $field => $value) {
+		echo "oldEmail is ".$oldEmail." and we are now testing it against ".$value."\n";
+	
+		//Once we find the match with the old email, replace it with the new email
+		if($oldEmail == $value){
+			echo "Replacing ".$value." with ".$newEmail."\n";
+			$json['users'][$field] = $newEmail;
+		
+			//UPDATE users.js
+			$myfile = fopen("treasure/users.js", "w") or die("Unable to open file!");
+			$txt =  json_encode($json);
+			fwrite($myfile, $txt);
+			fclose($myfile);
+			
+			//DELETE THE OLD FILE named after the old email
+			echo "Deleting "."treasure/$oldEmail.js";
+			unlink("treasure/$oldEmail.js");
+		
+			break;
+		}
+	}
+	
+}
+
+//IF ONLY the newEmail holds a value, it means we want to add a new user to the list
+if(($oldEmail == "") && ($newEmail != "")){
+	
+	$json["users"][] = $newEmail;
+	
+	//UPDATE users.js
+	$myfile = fopen("treasure/users.js", "w") or die("Unable to open file!");
+	$txt =  json_encode($json);
+	fwrite($myfile, $txt);
+	fclose($myfile);
+}
+
+//IF ONLY the oldEmail holds a value, it means we want to delete that user from the list
+if(($oldEmail != "") && ($newEmail == "")){
+	
+	foreach ($json['users'] as $field => $value) {
+		echo "oldEmail is ".$oldEmail." and we are now testing it against ".$value."\n";
+		
+		//Once we find the match with the old email, delete it from the array
+		if($oldEmail == $value){
+			
+	//-------THIS IS UNTESTED CODE--------//
+	
+			echo "Deleting ".$value;
+			unset($json['users'][$field]);
+			
+	//-------THIS IS UNTESTED CODE--------//
+		
+			//UPDATE users.js
+			$myfile = fopen("treasure/users.js", "w") or die("Unable to open file!");
+			$txt =  json_encode($json);
+			fwrite($myfile, $txt);
+			fclose($myfile);
+		
+			break;
+		}
+	}
+	
+}
+
+
+
+
+
+
+
+?>
