@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!--CHARACTER ENCODING-->
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	
+	<!--LINK TO STYLESHEET-->
+	<link rel="stylesheet" type="text/css" href="style/timePositive.css"/>
+	<link rel="stylesheet" type="text/css" href="style/color-sapphire.css"/>
+	
+	<!--LINK TO GOOGLE FONTS-->
+	<link href='https://fonts.googleapis.com/css?family=Lato:300,400,900|Roboto:100,300,400,700,900|Roboto+Condensed:400,700|Montserrat:700,400' rel='stylesheet' type='text/css'>
+	
+	<!--FAVICONS THANKS TO realfavicongenerator.net-->
+	<link rel="apple-touch-icon" sizes="57x57" href="favicons/apple-touch-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="favicons/apple-touch-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="favicons/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="favicons/apple-touch-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="favicons/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="favicons/apple-touch-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="favicons/apple-touch-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="favicons/apple-touch-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon-180x180.png">
+	<link rel="icon" type="image/png" href="favicons/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="favicons/android-chrome-192x192.png" sizes="192x192">
+	<link rel="icon" type="image/png" href="favicons/favicon-96x96.png" sizes="96x96">
+	<link rel="icon" type="image/png" href="favicons/favicon-16x16.png" sizes="16x16">
+	<link rel="manifest" href="favicons/manifest.json">
+	<link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="apple-mobile-web-app-title" content="TimePositive">
+	<meta name="application-name" content="TimePositive">
+	<meta name="msapplication-TileColor" content="#00aba9">
+	<meta name="msapplication-TileImage" content="favicons/mstile-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+	
+	<!--The following line prevents scaling on mobile devices-->
+	<meta name='viewport' content='width=device-width, initial-scale=1, user-scalable=no' />
+	
+	<!--TITLE-->
+	<title>Time Positive</title>
+</head>
+
+<body class="bgcolor-00" onload="animateTitleBox();initiateApp()">
+
+<!--PRE-LOGIN displays before user has logged in-->
+<div id="pre-login">
+	
+<!--HOME PAGE NAVIGATION-->
+<div id="homePageNavigationDiv" class="bgcolor-bright">
+	<img id="preLoginLittleLogo" src="images/littleSquareLogo.png" alt="">
+	<div id="earlyAdopters">Early Adopters</div>
+	<div id="signUp">Sign Up</div>
+	<div id="login">Log In</div>
+	<img id="homePageSpeakerIcon" src="images/speakerIcon-off-white.png" alt="">
+</div>
+
+<!--TOP AREA-->
+<div id="topArea" class="bgcolor-bright">
+	<!--TITLE BOX-->
+	<div id="titleBox">
+		<!--LOGO BOX-->
+		<div id="logoBox">
+			<div id="logo_T">T</div>
+			<div id="logo_plus">+</div>
+		</div>
+		<!--MAIN TITLE-->
+		<div id="mainTitle">TIMEPOSITIVE</div><br>
+		<!--SUB TITLE-->
+		<div id="subTitle">Aggressively Simple Time Planning</div><br>
+		<!--EXPLANATION-->
+		<div id="explanation">TimePositive is currently in Pre-Release and is being tested by a small and enthusiastic circle of productivity innovators. Sign up now to be invited to the official launch.</div><br>
+		<!--BUTTON-->
+		<div id="signUpButton">GET AN INVITATION</div><br>
+	</div>
+	
+	<!--CAPTION-->
+	<div id="caption">Make time for all the things you love
+		<br>
+		<!--TEASER ARROW-->
+		<img id="teaserArrow" src="images/teaserArrow.png" alt="">
+	</div>
+	
+</div>
+
+<!--CONTENT BODY-->
+<div id="contentBody">
+	<h1 class="color-bright">MANAGE TIME LIKE IT WAS YOUR SUPERPOWER.</h1>
+	<div class="contentIconBox">
+		<img class="contentIcon" src="images/icon-sketchBook.png" alt="">
+		<div class="contentBlurb">
+			<h3>You Define Your Work Schedule</h3>
+			You decide how many hours you’d like to work on each day of the week. Be sure to plan some vacation days.
+		</div>
+	</div>
+	<div class="contentIconBox">
+		<img class="contentIcon" src="images/icon-compass.png" alt="">
+		<div class="contentBlurb">
+			<h3>Constantly Intelligent Due Dates</h3>
+			When you create new projects, TimePositive uses your schedule and workload to calculate realistic due dates, to help you finish on time, every time.
+		</div>
+	</div>
+	<div class="contentIconBox">
+		<img class="contentIcon" src="images/icon-clock.png" alt="">
+		<div class="contentBlurb">
+			<h3>Know Just How Much To Work</h3>
+			TimePositive distributes your workload proportionately and shows you exactly how much time to work on each project, each day. Track your progress as you log time.
+		</div>
+	</div>
+	<div class="contentIconBox">
+		<img class="contentIcon" src="images/icon-targetPencil.png" alt="">
+		<div class="contentBlurb">
+			<h3>Plan On Success</h3>
+			Know exactly how far out you are booked. Know exactly how soon you can finish all your projects. TimePositive gives you these stats at a glance, so you have a clear picture of the future.
+		</div>
+	</div>
+	<h1 class="color-bright">MASTER YOUR TIME TODAY.</h1>
+	<div class="pricingBox">
+		<img src="images/icon-lightbulbCoin.png" alt="">
+		<div class="pricingBlurb">
+			<h3>Completely Free, Forever</h3>
+			TimePositive Basic is free forever, and allows you to track up to 10 projects at a time. If you want to step it up a notch with unlimited projects and multiple Profiles, check out TimePositive Premium.
+			<div class="selectPlanButton">Get An Invitation</div>
+		</div>
+	</div>
+	<div class="pricingBox">
+		<img src="images/icon-lightning.png" alt="">
+		<div class="pricingBlurb">
+			<h3>Get More Power with Premium</h3>
+			Track unlimited projects with TimePositive Premium for just <b>$10/month</b>. A Premium account also allows you to organize groups of projects into different Profiles, each with their own work schedule.
+			<br><br>
+			<b>At launch, your first 30 days of Premium will be totally free. No credit card required.</b>
+			<div class="selectPlanButton">Get An Invitation</div>
+		</div>
+	</div>
+</div>
+
+<footer>
+	<!--CREATIVE STUDIO LABS SIGNATURE-->
+	<div id="signatureDiv">
+		<img id="CSLLogo" src="images/CSLLogo.png" alt="">
+		<p class="footerText" style="color:#aaa;cursor:default">BUILT BY CREATIVE STUDIO LABS</p>
+	</div>
+	<br>
+	<a class="footerLink" href="http://creativestudiolabs.tumblr.com" target="_blank">Blog</a>
+	<a id="footerTwitterLink" class="footerLink" href="https://twitter.com/CreativeUrge" target="_blank"><img id="tinyTwitter" src="images/tinyTwitterIcon.png" alt=""> @CreativeUrge</a>
+	<a class="footerLink" href="mailto:support@timepositive.com">support@timepositive.com</a>
+	
+</footer>
+
+<!--EARLY ADOPTERS DIV-->
+<div id="earlyAdoptersDiv" class="bgcolor-bright">
+	
+	<!--Password form-->
+	<div id="earlyAdoptersPasswordDiv" class="loginModule">
+		<div id="earlyAdoptersBlurb">
+			<div class="confirmationMessage color-0">If you have an Early Adopter Passcode, enter it here to create your TimePositive Account.
+			</div>
+		</div>
+		<!--NUMBER PAD-->
+		<div id="numberPad">
+			<div id="passcodeDisplay">
+				<div class="passcodeNumberDiv"><img id="cherryCard-1" class="cherryCard" src="images/cherryCard-white.png" alt=""><span id="number-1" class="passcodeNumber"></span></div>
+				<div class="passcodeNumberDiv"><img id="cherryCard-2" class="cherryCard" src="images/cherryCard-white.png" alt=""><span id="number-2" class="passcodeNumber"></span></div>
+				<div class="passcodeNumberDiv last"><img id="cherryCard-3" class="cherryCard" src="images/cherryCard-white.png" alt=""><span id="number-3" class="passcodeNumber"></span></div>
+			</div>
+			<div id="numberButtons">
+				<div class="numberButton" onclick="typePasscodeNumber(0)">0</div>
+				<div class="numberButton" onclick="typePasscodeNumber(1)">1</div>
+				<div class="numberButton" onclick="typePasscodeNumber(2)">2</div>
+				<div class="numberButton last" onclick="typePasscodeNumber(3)">3</div>
+				<div class="numberButton" onclick="typePasscodeNumber(4)">4</div>
+				<div class="numberButton" onclick="typePasscodeNumber(5)">5</div>
+				<div id="clearNumberButton" onclick="clearPasscodeNumber()">CLEAR</div>
+				<div id="earlyAdopterCancelButton">CANCEL</div>
+			</div>
+			<div id="welcomeEarlyAdopter">WELCOME!</div>
+		</div><br>
+		<div id="stillWantToHelp" class="confirmationMessageComment color-0">Don't have a Passcode but want to<br>help improve TimePositive? Send an email to <a class="whiteLink" href="mailto:support@timepositive.com">support@timepositive.com</a> and tell us a little about yourself.</div>
+		<div id="earlyAdopterAccountDetailsDiv" class="confirmationMessageComment color-0">
+			<!-- NEW EARLY ADOPTER SIGN UP FORM -->
+			<form id="earlyAdopterSignupForm" onkeyup="customFormSubmit(event,'tryEarlyAdopterSignupButton')">
+				<div id="errorDiv-earlyAdopterSignup" class="errorDiv color-0 bgcolor-brighter"></div>
+				<!-- NAME -->
+				<div id="errorDiv-earlyAdopterSignupName" class="errorDiv color-0 bgcolor-brighter"></div>
+				<input id="earlyAdopterInputName" type="text" value="Your Name" onfocus="prepInput(this,'Your Name')" onblur="checkInput(this,'Your Name')">
+				<!-- EMAIL -->
+				<div id="errorDiv-earlyAdopterSignupEmail" class="errorDiv color-0 bgcolor-brighter"></div>
+				<input id="earlyAdopterInputEmail" type="text" value="Your Email" onfocus="prepInput(this,'Your Email')" onblur="checkInput(this,'Your Email')">
+				<!-- PASSWORD -->
+				<div id="errorDiv-earlyAdopterSignupPassword" class="errorDiv color-0 bgcolor-brighter"></div>
+				<input id="earlyAdopterInputPassword" type="text" value="Password" onfocus="prepInput(this,'Password',1)" onblur="checkInput(this,'Password',1)">
+				<!-- CONFIRM PASSWORD -->
+				<div id="errorDiv-earlyAdopterSignupConfirmPassword" class="errorDiv color-0 bgcolor-brighter"></div>
+				<input id="earlyAdopterInputConfirmPassword" type="text" value="Confirm Password" onfocus="prepInput(this,'Confirm Password',1)" onblur="checkInput(this,'Confirm Password',1)">
+			</form>
+			<div id="tryEarlyAdopterSignupButton" class="timerButton hollowButton-color-bright">Create Account</div>
+			<div id="earlyAdopterCancelSignUpButton" class="timerButton hollowButton-color-bright">Cancel</div>
+			<br><br><br>
+		</div>
+	</div>
+	
+</div>
+
+<!--WELCOME DIV-->
+<div id="welcomeDiv" class="bgcolor-bright">
+	<div class="loginModule">
+		<div id="hooray" class="confirmationMessage color-0">TA-DA!</div>
+		<div class="confirmationMessage color-0">Your new account has been created. Ready to step inside?</div><br>
+		<div id="enterAppButton" class="timerButton hollowButton-color-bright">Come On In</div>
+	</div>
+</div>
+
+<!--SIGNUP DIV-->
+<div id="signupDiv" class="bgcolor-bright">
+	
+	<!--Initial form-->
+	<div id="signUpForInvitationDiv" class="loginModule">
+		<div class="confirmationMessage color-0">Sign up to receive an email invitation when TimePositive is ready to launch.</div>
+		<div class="confirmationMessageComment color-0">Of course we won't share your email with any third parties.</div>
+		<form id="invitationForm" onkeyup="customFormSubmit(event,'trySignUpButton')">
+			<div id="errorDiv-invitation" class="errorDiv color-0 bgcolor-brighter"></div>
+			<div id="errorDiv-invitationEmail" class="errorDiv color-0 bgcolor-brighter"></div>
+			<input id="invitationInputEmail" type="text" value="" onfocus="prepInput(this,'Your Email')" onblur="checkInput(this,'Your Email')">
+		</form>
+		<div id="trySignUpButton" class="timerButton hollowButton-color-bright">Sign Up</div>
+		<div id="cancelSignUpButton" class="timerButton hollowButton-color-bright">Cancel</div>
+	</div>
+	
+	<!--Thank You Div-->
+	<div id="youWillGetYourInvitationDiv" class="loginModule">
+		<div class="confirmationMessage color-0">Thank you!</div>
+		<div class="confirmationMessageComment color-0">You'll receive an email invitation when TimePositive is ready to launch.<br><br>TimePositive makes setting project deadlines simpler than anything else I have found. I hope it helps all of us meet our creative goals with a new level of success. You can share this here:</div>
+		<div id="thankYouSocialButtonDiv">
+			<a href="https://www.facebook.com/sharer/sharer.php?u=http%3A//www.timepositive.com"><img class="thankYouSocialLink" src="images/fb-white.png" alt=""></a>
+			<a href="https://twitter.com/home?status=This%20new%20app%20helps%20you%20never%20miss%20a%20deadline%3A%20www.timepositive.com.%20%23timepositive%20%40CreativeUrge"><img class="thankYouSocialLink" src="images/tw-white.png" alt=""></a>
+		</div>
+		<div class="confirmationMessageComment color-0">Best wishes for your creative projects! &mdash;Adam</div>
+		<img id="thankYouPortraitCircle" src="images/AdamAgee.png" alt="">
+		<div id="closeSignUpButton" class="timerButton hollowButton-color-bright">Back To Home Page</div><br><br>
+	</div>
+	
+	<!--Failure Div-->
+	<div id="signupFailureDiv" class="loginModule">
+		<div class="confirmationMessage color-0">Hang on a sec...</div>
+		<div class="confirmationMessageComment color-0">Something went wrong on our end, and your email has not been added to our list. So sorry about that. If you try again in a few minutes, you might have some luck.</div>
+		<div id="tryAgainButton" class="timerButton hollowButton-color-bright">Try Again</div><br>
+		<div class="confirmationMessageComment color-0">If you keep having trouble, just email us at <a class="whiteLink" href="mailto:support@timepositive.com">support@timepositive.com</a> and let us know you'd like an invitation to the launch.</div>
+	</div>
+	
+</div>
+
+<!--LOGIN DIV-->
+<div id="loginDiv" class="bgcolor-bright">
+	<div class="loginModule">
+		<form id="loginForm" onkeyup="customFormSubmit(event,'tryLoginButton')">
+			<div id="errorDiv-login" class="errorDiv color-0 bgcolor-brighter"></div>
+			<div class="inputLabel color-1">Email:</div>
+			<div id="errorDiv-loginEmail" class="errorDiv color-0 bgcolor-brighter"></div>
+			<input id="loginInputEmail" class="color-6 bcolor-0" type="text" value="">
+			<div class="inputLabel color-1">Password:</div>
+			<div id="errorDiv-loginPassword" class="errorDiv color-0 bgcolor-brighter"></div>
+			<input id="loginInputPassword" class="color-6 bcolor-0" type="password" value="">
+		</form>
+		<br>
+		<div id="tryLoginButton" class="timerButton hollowButton-color-bright">Enter</div>
+		<div id="cancelLoginButton" class="timerButton hollowButton-color-bright">Cancel</div>
+	</div>
+</div>
+
+</div>
+
+<!--POST-LOGIN displays after user has logged in-->
+<div id="post-login">
+	
+<!--GET THE TOUR-->
+<div id="tourBox-1" class="bcolor-4">
+	<img id="tourBoxPointer" src="images/tourBoxPointer.png" alt="">
+	<div class="tourHeader color-9 bbcolor-3">A Quick Tip</div>
+	<div class="softVoice color-8">
+		You'll want to customize your Work Schedule to reflect your typical work week. Just click or tap up here on these three dots to open the menu, and select <b>Work Schedule</b>.<br><br>When you create new Projects, TimePositive knows your schedule and project load, so setting realistic due dates is easier than ever.
+	</div>
+	<div id="tourButton-1" class="tourButton brightButton-color-7">Onward</div>
+</div>
+
+<div id="tourBox-2" class="bcolor-4">
+	<img id="tourBoxPointerCenter" src="images/tourBoxPointer-center.png" alt="">
+	<div class="tourHeader color-9 bbcolor-3">Your Progress</div>
+	<div class="softVoice color-8">
+		Each day you work, TimePositive offers a suggestion for the amount of time to spend on each project. As you log time, your work is reflected here in the day's progress bar.<br><br>That's it &mdash; let me know if you need any help!
+		<img id="tourPortraitCircle" src="images/AdamAgee.png" alt="">
+	</div>
+	<div id="tourSignatureDiv" class="softVoice color-8">
+		Adam<br>
+		<a href="mailto:support@timepositive.com">support@timepositive.com</a><br>
+		(720) 500-4811
+	</div>
+	<div id="tourButton-2" class="tourButton brightButton-color-7">Okay, Got It!</div>
+</div>
+
+<!--TOUR SHADE-->
+<div id="tourShade" class="bgcolor-1"></div>
+
+<!--MESSAGE BAR-->
+<div id="messageBar" class="bgcolor-0 bbcolor-3">
+	<div id="messageBarCloseButton" class="surpriseButton-color-2">x</div>
+	<div id="message" class="color-7">Message Goes Here.</div>
+</div>
+
+<!--DAY PROGRESS BAR-->
+<div id="dayProgressBar">
+	<div id="vacationMessage" class="color-9">Hey! Today is a vacation day. What are you doing here?</div>
+	<div id="progressDisplay">
+		<div id="dayProgress-todaysWork" class="color-9">TODAY'S WORK:</div>
+		<div id="dayProgress-workedSoFar">3:25</div>
+		<div id="dayProgress-workStartBall" class="workBall"></div>
+		<div id="dayProgress-timeBar"><div id="dayProgress-timeFill" class="bgcolor-7"></div></div>
+		<div id="dayProgress-workEndBall" class="workBall"></div>
+		<div id="dayProgress-leftToWork">3:25</div>
+		<div id="dayProgress-leftToDo" class="color-9">LEFT TO DO</div>
+	</div>
+</div>
+
+<!--INFO BAR-->
+<div id="infoBar" class="">
+	
+	<div id="infoModuleContainer">
+		<!--MODULE: TODAY-->
+		<div id="infoModule-today" class="infoModule">
+			<div id="info-dayName" class="color-9">FRI</div>
+			<div class="infoDateParticle color-9"><div id="info-month" class="info-today-number">00</div><div class="info-today-timeUnit">MO</div></div>
+			<div class="infoDateParticle color-9"><div id="info-day" class="info-today-number">00</div><div class="info-today-timeUnit">DAY</div></div>
+			<div class="infoDateParticle color-9"><div id="info-year" class="info-today-number">00</div><div class="info-today-timeUnit">YR</div></div>
+		</div>
+	
+		<!--MODULE: PROFILE-->
+		<div id="infoModule-profile" class="infoModule">
+			<div id="info-profileName" class="info-profileName color-9"></div>
+			<div id="info-additionalProfileItemsDiv">
+				<!--ADDITIONAL PROFILE NAMES GET DYNAMICALLY LOADED IN HERE IF THERE ARE ANY-->
+			</div>
+		</div>
+	</div>
+	
+</div>
+
+<!--CONFIRMATION SCREEN-->
+<div id="confirmationDiv" class="bgcolor-bright">
+	
+	<!--Confirmation: Delete Project-->
+	<div id="confirmationScreen-deleteProject" class="confirmationModule">
+		<div class="confirmationMessage color-0">Complete the Project,<br>'<span id="confirmationDeleteProjectTitle">(PROJECT TITLE)</span>'?</div>
+		<div class="confirmationMessageComment color-0">This will permanently remove it, sending it off into the glorious ethers of completion.</div>
+		<div id="confirmDeleteProjectButton" class="timerButton hollowButton-color-bright">Yes, complete it</div>
+		<div id="cancelDeleteProjectButton" class="timerButton hollowButton-color-bright">No, keep it</div>
+	</div>
+	
+	<!--Confirmation: Delete Profile-->
+	<div id="confirmationScreen-deleteProfile" class="confirmationModule">
+		<div class="confirmationMessage color-0">Delete the Profile,<br>'<span id="confirmationDeleteProfileTitle"></span>'?</div>
+		<div id="confirmDeleteProfileButton" class="timerButton hollowButton-color-bright">Yes</div>
+		<div id="cancelDeleteProfileButton" class="timerButton hollowButton-color-bright">No</div>
+	</div>
+	
+	<!--Confirmation: Rename Profile-->
+	<div id="confirmationScreen-renameProfile" class="confirmationModule">
+		<div class="confirmationMessage color-0">Type a new name for the Profile,<br>'<span id="confirmationRenameProfileTitle"></span>':</div>
+		<form id="renameProfileForm" onkeyup="customFormSubmit(event,'confirmRenameProfileButton')">
+			<div id="errorDiv-renameProfile" class="errorDiv color-0 bgcolor-brighter"></div>
+			<input id="renameProfileInput" class="color-6 bcolor-0" type="text" value="" autocomplete="off">
+		</form>
+		<div id="confirmRenameProfileButton" class="timerButton hollowButton-color-bright">Rename</div>
+		<div id="cancelRenameProfileButton" class="timerButton hollowButton-color-bright">Cancel</div>
+	</div>
+	
+	<!--Confirmation: Upgrade to create more than 10 projects?-->
+	<div id="confirmationScreen-projectLimit" class="confirmationModule">
+		<div class="confirmationMessage color-0">Upgrade to create more projects?</div>
+		<div class="confirmationMessageComment color-0">You have 10 projects, which is as many as you can track with your Basic account. When you upgrade to a Premium account, the number of projects you can track is unlimited. <b>Your first 30 days of Premium are free</b>, and after that it's just $10/month.<br>Want to give it a try?</div>
+		<div id="upgradeToCreateMoreProjectsButton" class="timerButton hollowButton-color-bright">Yes, upgrade to premium</div>
+		<div id="notRightNowButton" class="timerButton hollowButton-color-bright">Not Right Now</div>
+	</div>
+	
+</div>
+
+<!--SHADE SCREEN-->
+<div id="shadeScreen" class="bgcolor-1"></div>
+
+<!--TIMER SCREEN-->
+<div id="timerScreen" class="bgcolor-bright">
+	
+	<div class="timerModule">
+		<div id="timerProjectTitle" class="timerProjectTitle color-1">Time Positive App</div>
+		<div class="timerNumbers color-1"><span id="timerHours">0</span>:<span id="timerMinutes">00</span>:<span id="timerSeconds">00</span></div>
+		<div class="timerDailyProgressBox color-1">
+			<div class="timerDailyProgressLeftBlurb blcolor-1">
+				DONE TODAY<br>
+				<span id="timerDoneToday">0:00</span>
+			</div>
+			<div class="timerDailyProgressRightBlurb brcolor-1">
+				GOAL TODAY<br>
+				<span id="timerGoalToday">3:00</span>
+			</div>
+		</div>
+		<div class="timerDailyProgressBar bcolor-1">
+			<div id="timerDailyProgressFill" class="timerDailyProgressFill bgcolor-1"></div>
+		</div>
+		<div id="timerStopButton" class="timerButton hollowButton-color-bright">Stop</div>
+		<div id="timerDoneButton" class="timerButton hollowButton-color-bright">Done</div>
+		<div id="timerContinueButton" class="timerButton hollowButton-color-bright">Continue</div>
+	</div>
+	
+</div>
+
+<!--TOP BAR-->
+<div class="topBar bgcolor-7">
+	<!--OLD VERSION <div class="logotype color-2 robotoCondensed">+TimePositive</div> -->
+	<img id="appLogo" src="images/appLogo.png" alt="TimePositive">
+	<div id="saveStatusMessage" class="saveStatusMessage color-1 bgcolor-8"></div>
+	<!--LOGGED IN AS NAME-->
+	<div id="loginWelcome" class="color-1 lato"></div>
+	<div id="topBarButtons">
+		<!--SETTINGS-->
+		<div id="settingsIcon">
+			<div class="settingsDot bgcolor-2"></div>
+			<div class="settingsDot bgcolor-2"></div>
+			<div class="settingsDot bgcolor-2"></div>
+		</div>
+		<!--ADD PROJECT-->
+		<div id="addProjectIcon" class="bcolor-2">
+			<div class="addIconBar h bgcolor-2"></div>
+			<div class="addIconBar v bgcolor-2"></div>
+		</div>
+	</div>
+</div>
+
+<!--SETTINGS DIV-->
+<div id="settingsDiv" class="bgcolor-6">
+	<div id="navButton-newProject" class="settingsDivItem darkButton-color-6 phoneAppear">new project</div>
+	<div id="navButton-overview" class="settingsDivItem darkButton-color-6">overview</div>
+	<div id="navButton-workSchedule" class="settingsDivItem darkButton-color-6" onclick="loadWorkScheduleScreen()">work schedule</div>
+	<div id="navButton-vacationDays" class="settingsDivItem darkButton-color-6">vacation days</div>
+	<div id="navButton-account" class="settingsDivItem darkButton-color-6">account</div>
+	<div id="navButton-profiles" class="settingsDivItem darkButton-color-6">profiles</div>
+	<div id="navButton-calculations" class="settingsDivItem darkButton-color-6">calculations</div>
+	<div id="navButton-signOut" class="settingsDivItem darkButton-color-6">log out</div>
+	<!--SOUND CONTROL-->
+	<img id="speakerIcon" src="images/speakerIcon-off.png" alt="">
+</div>
+
+<!--DROP-IN DIV-->
+<div id="dropInDiv" class="bcolor-3">
+	
+	<!--CLOSE BUTTON-->
+	<div class="dropInDivCloseButton darkButton-color-8" onclick="clearVacationDaysScreen()">x</div>
+	
+	<!--NEW PROJECT SCREEN-->
+	<div id="dropInScreen-newProject" class="dropInScreen">
+		<!--MOBILE CLOSE BUTTON-->
+		<div class="dropInDivCloseButtonMobile darkButton-color-8">x</div>
+		<!--SCREEN TITLE-->
+		<div class="dropInTitle color-7">NEW PROJECT</div>
+		<!--NEW PROJECT FORM-->
+		<div class="dropInModule">
+			<form id="newProjectForm">
+				<div id="errorDiv-newProjectTitle" class="errorDiv color-0 bgcolor-bright"></div>
+				<input id="newProjectInput-projectTitle" type="text" value="Project Title" autocomplete="off" onfocus="prepInput(this,'Project Title')" onblur="checkInput(this,'Project Title')" onkeyup="customFormSubmit(event,'createProjectButton')">
+				<div class="inputInstruction color-6">Keep it short and snappy</div>
+				<div id="errorDiv-newProjectTimeEstimate" class="errorDiv color-0 bgcolor-bright"></div>
+				<input id="newProjectInput-timeEstimate" type="text" value="Time Estimate" autocomplete="off" onfocus="prepInput(this,'Time Estimate')" onblur="autoFormatTimeInput(this,'suggestDueDate'); checkInput(this,'Time Estimate')" onkeyup="customFormSubmit(event,'createProjectButton')">
+				<div class="inputInstruction color-6">Use the format 0:00. (e.g. 3.5 hours reads 3:30)</div>
+				<div id="errorDiv-newProjectDueDate" class="errorDiv color-0 bgcolor-bright"></div>
+				<input id="newProjectInput-dueDate" type="text" value="Due Date" autocomplete="off" onfocus="prepInput(this,'Due Date')" onblur="checkInput(this,'Due Date')" onkeyup="customFormSubmit(event,'createProjectButton')">
+				<div class="inputInstruction color-6">Use the format MM/DD/YYYY</div>
+			</form>
+			<!--DUE DATE TIP-->
+			<div id="newProjectDueDateTip" class="color-6 bgcolor-0">Given this Time Estimate, your Work Schedule, and your current project load, the earliest you can finish this project is <b><span id="newProjectSuggestedDueDate" class="color-7">[...loading...]</span></b>.</div>
+			<!--END TIP-->
+			<div id="createProjectButton" class="dropInButton darkButton-color-7">Create Project</div>
+		</div>
+	</div>
+	
+	<!--EDIT PROJECT SCREEN-->
+	<div id="dropInScreen-editProject" class="dropInScreen">
+		<!--MOBILE CLOSE BUTTON-->
+		<div class="dropInDivCloseButtonMobile darkButton-color-8">x</div>
+		<!--SCREEN TITLE-->
+		<div class="dropInTitle color-7">EDIT PROJECT</div>
+		<!--EDIT PROJECT FORM-->
+		<div class="dropInModule">
+			<form id="editProjectForm">
+				<div class="inputLabel color-7">Project Title</div>
+				<div id="errorDiv-editProjectTitle" class="errorDiv color-0 bgcolor-bright"></div>
+				<input type="text" id="editProjectInput-projectTitle" class="color-9" value="Project Title" onkeyup="customFormSubmit(event,'editProjectSaveButton')">
+				<div class="inputInstruction color-6">Keep it short and snappy</div>
+				<div class="inputLabel color-7">Due Date</div>
+				<div id="errorDiv-editProjectDueDate" class="errorDiv color-0 bgcolor-bright"></div>
+				<input type="text" id="editProjectInput-dueDate" class="color-9" value="Due Date" onkeyup="customFormSubmit(event,'editProjectSaveButton')">
+				<div class="inputInstruction color-6">Keep the format MM/DD/YYYY</div>
+				<!--DUE DATE TIP-->
+				<div id="editProjectDueDateTip" class="color-6 bgcolor-0">Given your Time Estimate, your Work Schedule, and your current project load, the earliest you can finish this project is <b><span id="editProjectSuggestedDueDate" class="color-7">[...loading...]</span></b>.</div>
+				<!--END TIP-->
+				<div id="editProjectTimeEstimateLabel" class="inputLabel color-7">Time Estimate</div>
+				<div id="errorDiv-editProjectTimeEstimate" class="errorDiv color-0 bgcolor-bright"></div>
+				<input type="text" id="editProjectInput-timeEstimate" class="color-9" value="Time Estimate" onkeyup="customFormSubmit(event,'editProjectSaveButton')" onblur="autoFormatTimeInput(this);">
+				<div class="inputInstruction color-6">Keep the format 0:00. (e.g. 3.5 hours reads 3:30)</div>
+				<div class="inputLabel color-7">Total Time Spent</div>
+				<div id="errorDiv-editProjectTotalTimeSpent" class="errorDiv color-0 bgcolor-bright"></div>
+				<input type="text" id="editProjectInput-totalTimeSpent" class="color-9" value="Total Time Spent" onkeyup="customFormSubmit(event,'editProjectSaveButton')" onblur="autoFormatTimeInput(this);">
+				<div class="inputInstruction color-6">Total time worked so far, including today</div>
+				<div class="inputLabel color-7">Time Spent Today</div>
+				<div id="errorDiv-editProjectTimeSpentToday" class="errorDiv color-0 bgcolor-bright"></div>
+				<input type="text" id="editProjectInput-timeSpentToday" class="color-9" value="Time Spent Today" onkeyup="customFormSubmit(event,'editProjectSaveButton')" onblur="autoFormatTimeInput(this);">
+				<div class="inputInstruction color-6">The time you've put in today on this project</div>
+			</form>
+			<div id="editProjectSaveButton" class="dropInButton darkButton-color-7">Save</div>
+		</div>
+	</div>
+	
+	<!--WORK SCHEDULE SCREEN-->
+	<div id="dropInScreen-workSchedule" class="dropInScreen">
+		<!--MOBILE CLOSE BUTTON-->
+		<div class="dropInDivCloseButtonMobile darkButton-color-8">x</div>
+		<!--SCREEN TITLE-->
+		<div class="dropInTitle color-7">WORK SCHEDULE</div>
+		<div class="dropInModule">
+			<div class="softVoice color-7">Estimate the number of hours you plan to work on each day of the week. Click on a day to change its hours.</div>
+		</div>
+		<div class="dropInModule">
+			<!--CALENDAR-->
+			<div class="scheduleCalendar">
+				<div class="calendarHolder bcolor-3">
+					<div class="calendarDayColumn brcolor-3" onclick="setWorkScheduleInput('mo')">
+						<div class="calendarDayHighlight bgcolor-2"></div>
+						<div id="workScheduleDayFill-mo" class="calendarDayFill bgcolor-2"></div>
+						<div class="calendarDayLetter color-6">M</div>
+						<div id="workScheduleHours-mo" class="calendarDayHours color-8">7.5</div>
+					</div>
+					<div class="calendarDayColumn brcolor-3" onclick="setWorkScheduleInput('tu')">
+						<div class="calendarDayHighlight bgcolor-2"></div>
+						<div id="workScheduleDayFill-tu" class="calendarDayFill bgcolor-2"></div>
+						<div class="calendarDayLetter color-6">T</div>
+						<div id="workScheduleHours-tu" class="calendarDayHours color-8"></div>
+					</div>
+					<div class="calendarDayColumn brcolor-3" onclick="setWorkScheduleInput('we')">
+						<div class="calendarDayHighlight bgcolor-2"></div>
+						<div id="workScheduleDayFill-we" class="calendarDayFill bgcolor-2"></div>
+						<div class="calendarDayLetter color-6">W</div>
+						<div id="workScheduleHours-we" class="calendarDayHours color-8"></div>
+					</div>
+					<div class="calendarDayColumn brcolor-3" onclick="setWorkScheduleInput('th')">
+						<div class="calendarDayHighlight bgcolor-2"></div>
+						<div id="workScheduleDayFill-th" class="calendarDayFill bgcolor-2"></div>
+						<div class="calendarDayLetter color-6">T</div>
+						<div id="workScheduleHours-th" class="calendarDayHours color-8">3</div>
+					</div>
+					<div class="calendarDayColumn brcolor-3" onclick="setWorkScheduleInput('fr')">
+						<div class="calendarDayHighlight bgcolor-2"></div>
+						<div id="workScheduleDayFill-fr" class="calendarDayFill bgcolor-2"></div>
+						<div class="calendarDayLetter color-6">F</div>
+						<div id="workScheduleHours-fr" class="calendarDayHours color-8"></div>
+					</div>
+					<div class="calendarDayColumn brcolor-3" onclick="setWorkScheduleInput('sa')">
+						<div class="calendarDayHighlight bgcolor-2"></div>
+						<div id="workScheduleDayFill-sa" class="calendarDayFill bgcolor-2"></div>
+						<div class="calendarDayLetter color-6">S</div>
+						<div id="workScheduleHours-sa" class="calendarDayHours color-8"></div>
+					</div>
+					<div class="calendarDayColumn last brcolor-3" onclick="setWorkScheduleInput('su')">
+						<div class="calendarDayHighlight bgcolor-2"></div>
+						<div id="workScheduleDayFill-su" class="calendarDayFill bgcolor-2 brcolor-2"></div>
+						<div class="calendarDayLetter color-6">S</div>
+						<div id="workScheduleHours-su" class="calendarDayHours color-8"></div>
+					</div>
+				</div>
+			</div>
+			<!--END CALENDAR-->
+			<br>
+			<!--EDIT SCHEDULE FORM-->
+			<form id="workScheduleForm">
+				<div id="workScheduleCurrentDay" class="inputLabel color-7">Monday</div>
+				<div id="errorDiv-workSchedule" class="errorDiv color-0 bgcolor-bright"></div>
+				<input id="workScheduleCurrentDayHoursInput" class="color-9" type="text" value="" autocomplete="off" onkeyup="setWorkScheduleCalendarDisplay();customFormSubmit(event,'editWorkScheduleSaveButton')">
+				<div class="inputInstruction color-6">Enter the number of hours, 1-24. You can use 0.5 for half-hours.</div>
+			</form>
+			<br>
+			<div id="editWorkScheduleSaveButton" class="dropInButton darkButton-color-7" onclick="saveWorkSchedule()">Save</div>
+		</div>
+	</div>
+	
+	<!--EDIT VACATION DAYS SCREEN-->
+	<div id="dropInScreen-vacationDays" class="dropInScreen">
+		<!--MOBILE CLOSE BUTTON-->
+		<div class="dropInDivCloseButtonMobile darkButton-color-8" onclick="clearVacationDaysScreen()">x</div>
+		<!--SCREEN TITLE-->
+		<div class="dropInTitle color-7">VACATION DAYS</div>
+		<div class="dropInModule">
+			<div class="softVoice color-7">Add a specific date you know you will be away from work:</div><br>
+			<!--EDIT VACATION DAYS FORM-->
+			<form id="vacationDaysForm">
+				<div id="errorDiv-vacationDays" class="errorDiv color-0 bgcolor-bright"></div>
+				<input id="vacationDaysInput" type="text" value="MM/DD/YYYY" autocomplete="off" onfocus="prepInput(this,'MM/DD/YYYY')" onblur="checkInput(this,'MM/DD/YYYY')" onkeyup="customFormSubmit(event,'vacationDaysAddButton')">
+				<div class="inputInstruction color-6">Use the format MM/DD/YYYY. For a date range, use a hyphen (e.g. if you are away from May 10th to May 25th 2017, type 5/10/17-5/25/17).</div>
+			</form>
+			<div id="vacationDaysAddButton" class="dropInButton darkButton-color-7" onclick="addVacationDay()">Add</div>
+			<h5 class="color-7">YOUR VACATION DAYS:</h5>
+			<div id="vacationDaysDiv" class="vacationDaysDiv bgcolor-0 btcolor-3">
+				<!-- Vacation Days are dynamically loaded here -->
+			</div>
+		</div>
+	</div>
+	
+	<!--ACCOUNT SCREEN-->
+	<div id="dropInScreen-account" class="dropInScreen">
+		<!--MOBILE CLOSE BUTTON-->
+		<div class="dropInDivCloseButtonMobile darkButton-color-8">x</div>
+		<!--SCREEN TITLE-->
+		<div class="dropInTitle color-7">YOUR ACCOUNT</div>
+		<!--ACCOUNT FORM-->
+		<div id="accountDropinModule" class="dropInModule">
+			<!--Shown only for users with a memberStatus of "sample"-->
+			<div id="sampleUserBlockEditDiv"></div>
+			<!--(End Block Edit Div)-->
+			<form id="accountForm">
+				<div class="inputLabel color-7">Name</div>
+				<div id="errorDiv-accountName" class="errorDiv color-0 bgcolor-bright"></div>
+				<input id="accountNameInput" type="text" value="" class="color-8" onkeyup="customFormSubmit(event,'editAccountSaveButton')">
+				<div class="inputLabel color-7">Email</div>
+				<div id="errorDiv-accountEmail" class="errorDiv color-0 bgcolor-bright"></div>
+				<input id="accountEmailInput" type="text" value="Email" class="color-8" onkeyup="customFormSubmit(event,'editAccountSaveButton')">
+				
+				<a id="changePasswordLink" class="actionLink">Change Password<br><br></a>
+				
+				<div id="changePasswordDiv">
+					<div class="inputLabel color-7">New Password</div>
+					<div id="errorDiv-accountNewPassword" class="errorDiv color-0 bgcolor-bright"></div>
+					<input id="accountNewPasswordInput" type="text" value="Type your new password" onfocus="prepInput(this,'Type your new password',1)" onblur="checkInput(this,'Type your new password',1)" onkeyup="customFormSubmit(event,'editAccountSaveButton')">
+					<div id="errorDiv-accountConfirmPassword" class="errorDiv color-0 bgcolor-bright"></div>
+					<input id="accountConfirmPasswordInput" type="text" value="Confirm password" onfocus="prepInput(this,'Confirm password',1)" onblur="checkInput(this,'Confirm password',1)" onkeyup="customFormSubmit(event,'editAccountSaveButton')">
+				</div>
+				
+			</form>
+			<div id="editAccountSaveButton" class="dropInButton darkButton-color-7">Save</div>
+		</div>
+		<div id="basicAccountModule" class="dropInModule">
+			<div class="softVoice color-7">P.S. You have the <span id="accountScreenProfileType" class="color-9 bgcolor-0">Basic Account,</span> which is free, and admittedly, kicks a lot of ass. A <b>TimePositive Premium Account</b> allows you to track more than 10 projects at a time, and to create multiple profiles. You get the first 30 days free, and you can switch back to Basic anytime.</div><br>
+			<div id="editAccountUpgradeButton" class="dropInButton surpriseButton-color-00 bgcolor-0 bcolor-3" onclick="upgradeToPremium()">Go Premium</div>
+		</div>
+		<!-- MAKE LINK ACTIVE to switch to a Basic Account, and add details about managing your payments, before launching Premium. -->
+		<div id="premiumAccountModule" class="dropInModule">
+			<div class="softVoice color-7">You are rocking a TimePositive <span id="accountScreenProfileType" class="color-9 bgcolor-0">Premium</span> Account. This enables you to create multiple profiles with unlimited projects. If you want to step it down a notch, you can <a id="switchToBasicAccountLink">switch back to a Basic Account.</a></div>
+		</div>
+		<div id="trialAccountModule" class="dropInModule">
+			<div class="softVoice color-7">You are rocking a TimePositive <span id="accountScreenProfileType" class="color-9 bgcolor-0">Premium</span> Account. This enables you to create multiple profiles with unlimited projects.<br><br>You've got <b><span id="daysLeftInTrialPeriod"></span></b> days left in your free trial period.</div>
+		</div>
+		<div id="sampleAccountModule" class="dropInModule">
+			<div class="softVoice color-7">You are rocking a TimePositive <span id="accountScreenProfileType" class="color-9 bgcolor-0">Premium</span> Account. This enables you to create multiple profiles with unlimited projects... which, if you're Hermione, comes in quite handy indeed.</div>
+		</div>
+	</div>
+	
+	<!--PROFILES SCREEN-->
+	<div id="dropInScreen-profiles" class="dropInScreen">
+		<!--MOBILE CLOSE BUTTON-->
+		<div class="dropInDivCloseButtonMobile darkButton-color-8">x</div>
+		<!--SCREEN TITLE-->
+		<div class="dropInTitle color-7">YOUR PROFILES</div>
+		
+		<!--PREMIUM ACCOUNT-->
+		<div id="premiumProfileModule" class="dropInModule">
+			<div class="softVoice color-7">Current Profile: <span id="profileScreenCurrentProfileName" class="color-9 bgcolor-0"></span></div><br>
+			<div class="softVoice color-7">With your premium account, you can create multiple Profiles. Each Profile has its own Work Schedule and Projects, separate from your other Profiles.</div><br>
+			<!--PROFILES FORM-->
+			<form id="profilesForm">
+				<div id="errorDiv-profiles" class="errorDiv color-0 bgcolor-bright"></div>
+				<input id="profileNameInput" type="text" value="Profile Name" autocomplete="off" onkeyup="customFormSubmit(event,'createNewProfileButton')" onfocus="prepInput(this,'Profile Name')" onblur="checkInput(this,'Profile Name')" >
+				<div class="inputInstruction color-6">Type a name to create a new Profile.</div>
+			</form>
+			<div id="createNewProfileButton" class="dropInButton darkButton-color-7">Create a new Profile</div>
+			<h5 class="color-7">YOUR PROFILES:</h5>
+			<div id="profileItemsDiv" class="profileItemsDiv bgcolor-00 btcolor-3">
+				<!--PROFILE ITEM DIVS GET LOADED DYNAMICALLY HERE-->
+			</div>
+		</div>
+		
+		<!--NON-PREMIUM ACCOUNT-->
+		<div id="basicProfileModule" class="dropInModule">
+			<div class="softVoice color-7">You can upgrade to a premium account to create multiple Profiles. Each Profile has its own Work Schedule and Projects, separate from your other Profiles. Then you simply click or tap on the one you want to view.</div><br>
+			<!--PROFILES FORM-->
+			<form id="fakeProfilesForm">
+				<img id="profilesLockIcon" src="images/lockIcon.png" alt="">
+				<input type="text" value="Profile Name" disabled="disabled">
+				<div class="inputInstruction color-6">You'll type a name for your new Profile here.</div>
+			</form>
+			<div id="profilesUpgradeButton" class="dropInButton darkButton-color-7">Upgrade to create a new Profile</div>
+			<h5 class="color-7">YOUR PROFILES:</h5>
+			<div id="sampleProfileItemsDiv" class="profileItemsDiv bgcolor-00 btcolor-3">
+				<!--PROFILES ITEM-->
+				<div class="sampleProfileItem active color-7 bgcolor-1 bbcolor-3">
+					<span>Current Profile</span>
+				</div>
+				<!--PROFILES ITEM-->
+				<div class="sampleProfileItem color-6 bgcolor-00 bbcolor-3">
+					<span>New profiles appear listed down here!</span>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+	
+	<!--CALCULATIONS SCREEN-->
+	<div id="dropInScreen-calculations" class="dropInScreen">
+		<!--MOBILE CLOSE BUTTON-->
+		<div class="dropInDivCloseButtonMobile darkButton-color-8">x</div>
+		<!--SCREEN TITLE-->
+		<div class="dropInTitle color-7">CALCULATIONS</div>
+		<div class="dropInModule">
+			<div id="youHaveSomeProjects">
+				<div class="softVoice color-7">Given your existing projects, work schedule, and vacation days, here are a couple calculations.</div><br>
+				<!-- Brought over from the overview box! -->
+				<div class="hr btcolor-3"></div>
+				<div id="bookedOutTillDiv" class="overviewBoxInfoBlurb color-7">You're booked out until:<br><span id="bookedOutTillDate" class="bgcolor-0 color-9"></span></div>
+				<div class="softVoice color-7">This is the earliest date you can start on a new project, if you want to finish all your existing projects on time.</div><br>
+				<div class="hr btcolor-3"></div>
+				<div id="youCouldFinishBy" class="overviewBoxInfoBlurb color-7">You could finish all your projects by:<br><span id="earliestPossibleFinishDate" class="bgcolor-0 color-9"></span></div>
+				<div class="softVoice color-7">If you worked all your available hours on just your current projects, you would finish them all by this date.</div><br>
+			</div>
+			<div id="youHaveNoProjects" class="softVoice color-7">As you create projects, TimePositive crunches some numbers to help you plan your time with the uncanny insight of an all-knowing deity.<br><br>Your friends will marvel at your skill, and your clients will weep with gratitude.<br><br>Soon you will embody such profound mastery that time itself will roll in ecstasy at your feet.
+			</div>
+			<div id="youHaveUntimelyProjects" class="softVoice color-7">You have one or more overdue or oversize projects. In order for the little TimePositive Calculation Gnomes to work their magic, you have got to make sure all your projects have accurate due dates.<br><br>Once you have edited your projects, check back here to see a couple handy calculations.
+			</div>
+		</div>
+	</div>
+	
+</div>
+	
+<!--CONTAINER-->
+<div id="container">
+
+<!--OVERVIEW-->
+<div id="overviewBox" class="overviewBox bgcolor-7 bcolor-7">
+	<div class="overviewBoxCloseButton darkButton-color-7">x</div>
+	<div class="overviewBoxProjects color-2"><span id="overviewBoxProjectCount" class="overviewBoxProjectCount color-1">7 Projects</span></div>
+
+	<!--THIS WEEK-->
+	<div class="overviewBoxThisWeek bgcolor-00">
+		<div class="projectLoadTitle color-9">Work Load: <span id="overviewBoxWorkWeekLabel"><b>This Week</b></span></div>
+		<div class="projectLoadBar bcolor-4"><div id="projectLoadWeeklyFill" class="projectLoadFill bgcolor-4"></div></div>
+		<!--CALENDAR BUTTON DIV-->
+		<div id="overviewBoxCalendarNoMoreWeeksMessage" class="color-1 bgcolor-7">No Projects Due Beyond This Week</div>
+		<div class="overviewBoxCalendarButtonDiv bgcolor-5">
+			<div id="overviewBoxCalendarButton-left" class="overviewBoxCalendarButton left darkButton-color-7">
+				<span id="overviewBoxCalendarButtonText-left">Last week</span>
+				<img class="overviewBoxCalendarArrow left" src="images/arrow-left-white.png" alt="">
+			</div>
+			<div id="overviewBoxCalendarButton-right" class="overviewBoxCalendarButton right darkButton-color-7">
+				<span id="overviewBoxCalendarButtonText-right">Next Week
+				<img class="overviewBoxCalendarArrow right" src="images/arrow-right-white.png" alt="">
+			</div>
+		</div>
+		<!--CALENDAR-->
+		<div class="overviewBoxCalendar">
+			<div class="calendarHolder bcolor-3">
+				<div  id="calendarDayColumn-mo" class="calendarDayColumn color-6 brcolor-3">
+					<div id="calendarDayFill-mo" class="calendarDayFill bgcolor-2"></div>
+					<div class="calendarDayLetter">M</div><br>
+					<div id="calendarDayNumber-mo" class="calendarDayNumber">0</div>
+				</div>
+				<div id="calendarDayColumn-tu" class="calendarDayColumn color-6 brcolor-3">
+					<div id="calendarDayFill-tu" class="calendarDayFill bgcolor-2"></div>
+					<div class="calendarDayLetter">T</div><br>
+					<div id="calendarDayNumber-tu" class="calendarDayNumber">0</div>
+				</div>
+				<div id="calendarDayColumn-we" class="calendarDayColumn color-6 brcolor-3">
+					<div id="calendarDayFill-we" class="calendarDayFill bgcolor-2"></div>
+					<div class="calendarDayLetter">W</div><br>
+					<div id="calendarDayNumber-we" class="calendarDayNumber">0</div>
+				</div>
+				<div id="calendarDayColumn-th" class="calendarDayColumn color-6 brcolor-3">
+					<div id="calendarDayFill-th" class="calendarDayFill bgcolor-2"></div>
+					<div class="calendarDayLetter">T</div><br>
+					<div id="calendarDayNumber-th" class="calendarDayNumber">0</div>
+				</div>
+				<div id="calendarDayColumn-fr" class="calendarDayColumn color-6 brcolor-3">
+					<div id="calendarDayFill-fr" class="calendarDayFill color-6 bgcolor-2"></div>
+					<div class="calendarDayLetter">F</div><br>
+					<div id="calendarDayNumber-fr" class="calendarDayNumber">0</div>
+				</div>
+				<div id="calendarDayColumn-sa" class="calendarDayColumn color-6 brcolor-3">
+					<div id="calendarDayFill-sa" class="calendarDayFill bgcolor-2"></div>
+					<div class="calendarDayLetter">S</div><br>
+					<div id="calendarDayNumber-sa" class="calendarDayNumber">0</div>
+				</div>
+				<div id="calendarDayColumn-su" class="calendarDayColumn last color-6 brcolor-3">
+					<div id="calendarDayFill-su" class="calendarDayFill bgcolor-2"></div>
+					<div class="calendarDayLetter">S</div><br>
+					<div id="calendarDayNumber-su" class="calendarDayNumber">0</div>
+				</div>
+			</div>
+		</div>
+		<!--END CALENDAR-->
+	</div>
+	<!--END THIS WEEK-->
+</div><div id="projectBoxContainer"><!--PROJECT BOX CONTAINER: projects dynamically loaded in here.--></div><div id="addProjectBox" class="projectDiv color-7 bcolor-4">
+	<!--PLUS BUTTON-->
+	<div id="addProjectBoxIcon" class="bcolor-3">
+		<div class="addIconBoxBar h bgcolor-4"></div>
+		<div class="addIconBoxBar v bgcolor-4"></div>
+	</div>
+	<div id="addProjectBoxText">Create a New Project</div>
+</div>
+
+</div>
+<!--END CONTAINER-->
+
+<div id="appFooter">
+	<a href="http://creativestudiolabs.tumblr.com" target="_blank" class="appFooterLink signature">Built By Creative Studio Labs</a>
+	<a href="mailto:support@timepositive.com" class="appFooterLink"><img id="appFooterEnvelope" src="images/envelopeIcon.png" alt=""> Support</a>
+	<a class="appFooterLink" href="https://twitter.com/CreativeUrge" target="_blank"><img id="appFooterTwitterBird" src="images/tinyTwitterIcon-black.png" alt=""> CreativeUrge</a>
+</div>
+
+</div>
+<!--END POST-LOGIN-->
+
+
+<!--AUDIO-->
+<audio id="introMusic" loop>
+  <source src="audio/8-bit-intromusic.mp3" type="audio/mpeg">
+</audio>
+<audio id="bleepEcho">
+  <source src="audio/bleepEcho.mp3" type="audio/mpeg">
+</audio>
+<audio id="blaster">
+  <source src="audio/blaster.mp3" type="audio/mpeg">
+</audio>
+<audio id="blip">
+  <source src="audio/blip.mp3" type="audio/mpeg">
+</audio>
+<audio id="buttonPress">
+  <source src="audio/buttonPress.mp3" type="audio/mpeg">
+</audio>
+<audio id="coin">
+  <source src="audio/coin.mp3" type="audio/mpeg">
+</audio>
+<audio id="descend">
+  <source src="audio/descend.mp3" type="audio/mpeg">
+</audio>
+<audio id="gameOver">
+  <source src="audio/gameOver.mp3" type="audio/mpeg">
+</audio>
+<audio id="jump">
+  <source src="audio/jump.mp3" type="audio/mpeg">
+</audio>
+<audio id="levelUp">
+  <source src="audio/levelUp.mp3" type="audio/mpeg">
+</audio>
+<audio id="oneUp">
+  <source src="audio/oneUp.mp3" type="audio/mpeg">
+</audio>
+<audio id="pauseStart">
+  <source src="audio/pauseStart.mp3" type="audio/mpeg">
+</audio>
+<audio id="playerDamage">
+  <source src="audio/playerDamage.mp3" type="audio/mpeg">
+</audio>
+<audio id="shoot">
+  <source src="audio/shoot.mp3" type="audio/mpeg">
+</audio>
+<audio id="win">
+  <source src="audio/win.mp3" type="audio/mpeg">
+</audio>
+
+<!--SCRIPTS-->
+
+<!--Remove the local version of jquery and replace with the google version when done developing-->
+<script type="text/javascript" src="scripts/jquery-1.11.2.js"></script>
+<script type="text/javascript" src="scripts/jquery-ui.min.js"></script>
+<!--Load AppML-->
+<!-- <script src="http://www.w3schools.com/appml/2.0.3/appml.js"></script> -->
+
+
+<!--Load my own scripts-->
+<script type="text/javascript" src="scripts/timePositive.js"></script>
+
+</body>
+</html>
